@@ -1,0 +1,5 @@
+from twilio.rest import Client
+from sms import sms
+if __name__ == "__main__":
+    from sys import argv
+    sms(argv[1:])
