@@ -1,5 +1,5 @@
 from twilio.rest import Client
-from sms import sms
+from smspy import send_message
 if __name__ == "__main__":
     from sys import argv
-    sms(argv[1:])
+    send_message(argv[1:])

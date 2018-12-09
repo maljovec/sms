@@ -1,2 +1,1 @@
-import sms
-import secret
+from main import send_message
