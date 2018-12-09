@@ -1,5 +1,7 @@
+from __future__ import absolute_import
 from twilio.rest import Client
-from secret import account_sid, auth_token
+from .secret import account_sid, auth_token
+
 def sms(args):
     client = Client(account_sid, auth_token)
     if args is not None and len(args):
